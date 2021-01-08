@@ -31,7 +31,7 @@ function draw() {
 
     background(bg);
 
-    if(tom.x - jerry.x < (tom.width - jerry.width)/2)
+    if(tom.x - jerry.x < (tom.width + jerry.width)/2)
     { 
         tom.velocityX=0;
         tom.addAnimation("tomLastImage", tomImg3);
