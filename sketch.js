@@ -17,16 +17,16 @@ function preload() {
 function setup(){
     canvas = createCanvas(1000,800);
 
-    tom = createSprite(870, 600);
+    tom = createSprite(900, 600);
     tom.addAnimation("tomSleeping", tomImg1);
     tom.scale = 0.2;
-    tom.setCollider("rectangle",0,0,500,100);
+    tom.setCollider("rectangle",0,0,300,100);
     tom.debug = true;
 
     jerry = createSprite(200, 600);
     jerry.addAnimation("jerryStanding", jerryImg1);
     jerry.scale = 0.15;
-    jerry.setCollider("rectangle",0,0,500,100);
+    jerry.setCollider("rectangle",0,0,200,100);
     jerry.debug = true;
 }
 
@@ -38,7 +38,7 @@ function draw() {
     { 
         tom.velocityX=0;
         tom.addAnimation("tomLastImage", tomImg3);
-        tom.x =300;
+        tom.x =400;
         tom.scale=0.2;
         tom.changeAnimation("tomLastImage");
         jerry.addAnimation("jerryLastImage", jerryImg3);
