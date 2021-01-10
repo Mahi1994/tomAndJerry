@@ -20,13 +20,13 @@ function setup(){
     tom = createSprite(900, 600);
     tom.addAnimation("tomSleeping", tomImg1);
     tom.scale = 0.2;
-   // tom.setCollider("rectangle",0,0,300,100);
+    tom.setCollider("rectangle",0,0,300,100);
     tom.debug = true;
 
     jerry = createSprite(200, 600);
     jerry.addAnimation("jerryStanding", jerryImg1);
     jerry.scale = 0.15;
-   // jerry.setCollider("rectangle",0,0,200,100);
+    jerry.setCollider("rectangle",0,0,200,100);
     jerry.debug = true;
 }
 
